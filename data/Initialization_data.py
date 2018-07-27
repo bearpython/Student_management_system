@@ -12,7 +12,7 @@ import os,sys
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(BASE_DIR)
 
-engine = create_engine("mysql+pymysql://root:123456@172.18.1.106/stu_management?charset=utf8",  #要写入中文必须加上?charset=utf8
+engine = create_engine("mysql+pymysql://root:******@10.10.2.106/stu_management?charset=utf8",  #要写入中文必须加上?charset=utf8
                        encoding='utf-8') #echo=True #echo的作用就是打印出执行的过程，所有的信息都打印出来
 
 Base = declarative_base()
